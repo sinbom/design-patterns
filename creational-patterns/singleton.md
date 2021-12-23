@@ -65,7 +65,7 @@ public class Singleton {
     private Singleton() {
     }
 
-    public static synchronized Singleton getInstance() {
+    public static Singleton getInstance() {
         return INSTANCE;
     }
 
@@ -109,10 +109,10 @@ thread-safe를 보장할 수 있으며 JDK 1.5 이상을 사용하는 경우에�
     <img src="https://github.com/sinbom/design-patterns/blob/master/resources/multi-thread-cpu.png?raw=true"/>
 </p>
 
-하지만 애플리케이션이 두 개 이상의 CPU를 가진 컴퓨팅 환경에 의해 실행되고 있다면 멀티 쓰레드 환경에서 접근하는 
+애플리케이션이 두 개 이상의 CPU를 가진 컴퓨팅 환경에서 실행되고 있다면 멀티 쓰레드 환경에서 접근하는 
 CPU cache가 서로 다를 수 있기 때문에 동일한 메모리에서 read/write를 수행하지 않을 수 있고,
 CPU cache에 write한 값이 언제 메인 메모리에 write될지 알 수 없기 때문에 가시성 문제가 발생합니다.
-volatile 키워드가 지정된 변수는 메인 메모리에서 데이터를 read/write 하도록 하여 멀티 프로세싱 환경에서도
+volatile 키워드가 지정된 변수는 메인 메모리에 read/write하여 멀티 프로세싱 환경에서도
 서로 다른 쓰레드들이 동일한 메모리를 참조할 수 있도록 하여 가시성 문제를 해결합니다.
 
 5. static inner class
@@ -133,7 +133,7 @@ public class Singleton {
 }
 ```
 
-inner class가 접근되는 시점에서 클래스 로더에 의해 로드되는 점을 사용하여 동기화 처리를 하지 않으면서도 
+inner class가 접근되는 시점에서 클래스 로더에 의해 lazy하게 로드되는 점을 사용하여 동기화 처리를 하지 않으면서도 
 필요한 경우에만 단 하나의 객체를 lazy하게 생성할 수 있는 방법입니다. 이 방법은 이전 까지의 모든 방법들에 비해서
 가장 효율적으로 멀티 쓰레드 환경에서도 싱글톤을 보장할 수 있는 방법이지만 몇 가지 정상적이지 않은 사용에 의해서
 싱글톤의 보장이 깨질 수 있습니다.
@@ -177,7 +177,7 @@ public void 직렬화_및_역직렬화에의해_싱글톤이_보장되지않을�
 }
 ```
 
-두 번째는 클래스가 serializable 인터페이스를 구현한 경우에는 객체를 바이트 형태의 데이터로 변환할 수 있게 되는데 직렬화된 데이터를
+두 번째는 클래스가 serializable 인터페이스를 구현한 경우에는 객체를 바이트 형태의 데이터로 변환하는 직렬화를 수행할 수 있게 되는데 직렬화된 데이터를
 다시 객체로 변환하는 역직렬화를 수행하는 과정에서 해당 클래스의 readResolve 메소드를 호출하게되고 해당 메소드에서 기본 생성자를 호출하여
 새로운 객체를 생성하게 됩니다. 
 
