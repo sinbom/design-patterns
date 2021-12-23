@@ -3,7 +3,7 @@
 - ## Creational Patterns(생성 관련 패턴)
 
     - [Singleton(싱글톤 패턴)](https://github.com/sinbom/design-patterns/blob/master/creational-patterns/singleton.md)
-    - [Factory Method(팩토리 메소드 패턴)]()
+    - [Factory Method(팩토리 메소드 패턴)](https://github.com/sinbom/design-patterns/blob/master/creational-patterns/factory-method.md)
     - [Abstract Factory(추상 팩토리 패턴)]()
     - [Builder(빌더 패턴)]()
     - [Prototype(프로토타입 패턴)]()

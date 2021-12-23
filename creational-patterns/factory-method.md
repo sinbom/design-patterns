@@ -142,7 +142,7 @@ CargoShip cargoShip = new CargoShip("화물선1호", "black");
 PassengerShip passengerShip = new PassengerShip("여객선1호", "white");
 ```
 
-직접 클래스를 생성하게 되면 새로운 클래스가 추가될 때마다 소스 코드의 수정이 필요해지고 클래스간의 결합도가 증가합니다.
+직접 구체적인 클래스를 사용하여 객체를 생성하는 코드를 사용하게되면 새로운 구현체가 추가될 때마다 소스 코드의 수정이 필요해지고 클래스간의 결합도가 증가합니다.
 
 ```java
 @ParameterizedTest
