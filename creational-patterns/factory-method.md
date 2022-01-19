@@ -28,27 +28,6 @@ public interface ShipFactory {
 - new[type] : 다른 타입의 새로운 인스턴스를 생성
 
 ```java
-public class ShipStaticFactory {
-
-    public static Ship of(String name, String color, String type) {
-        switch (type) {
-            case "cargo":
-                return new CargoShip(name, color);
-            case "passenger":
-                return new PassengerShip(name, color);
-            default:
-                throw new IllegalArgumentException("제작할 수 없는 배의 유형입니다.");
-        }
-    }
-
-}
-```
-
-정적 팩토리 메소드를 사용해 구현체를 생성하는 방식은 새로운 구현체가 생길때마다 새로운 팩토리 클래스를 정의하고 관리할 필요가 없지만
-변경사항이 생길때 마다 소스 코드를 수정해서 대응해야 하는 단점이 있으므로 OCP(open closed principal)를
-위반하게 됩니다. 각 방법에 따라 장단점이 다르기 때문에 상황에 맞는 적합한 방법을 선택해서 사용하는 것이 좋습니다.
-
-```java
 public class CargoShipFactory implements ShipFactory {
 
     @Override
@@ -170,11 +149,3 @@ public static class TestArgumentProvider implements ArgumentsProvider {
 
 반면 팩토리 메소드를 사용하게되면 주입되는 팩토리의 구현체에 따라 생성되는 구현체가 다르지만 추상화된 클래스와 인터페이스를
 사용하고 있기 때문에 소스 코드에 영향을 주지 않으며 클래스간의 결합도가 증가하지 않습니다.
-
-### 사용 사례
-
-1. java.util.Calendar
-
-2. java.time.LocalDate, LocalTime, LocalDateTime
-
-3. org.springframework.beans.factory.BeanFactory
