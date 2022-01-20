@@ -3,7 +3,7 @@
 ## Factory Method(팩토리 메소드 패턴)
 > 객체 생성의 책임을 팩토리에게 위임하고 생성된 객체를 구체적인 클래스가 아닌 추상적인 인터페이스 타입으로
 > 반환하여 클래스간의 결합도를 느슨하게 가져갈 수 있고 객체 생성 로직이 변경되어도 팩토리 내부의 로직에만 
-> 영향을 미치기 때문에 변경 사항에 대응하기 유리합니다. 구현체(Product)와 구현체를 생성하는 팩토리(Creator)로 구성됩니다.
+> 영향을 미치기 때문에 변경 사항에 대응하기 유리합니다.
 
 <p align="center">
     <img src="https://github.com/sinbom/design-patterns/blob/master/resources/factory-method.jpg?raw=true"/>
@@ -19,7 +19,7 @@ public interface ShipFactory {
 }
 ```
 
-팩토리 메소드의 네이밍에 사용되는 컨벤션은 다음과 같습니다.
+팩토리 인터페이스를 정의합니다. 메소드의 네이밍에 사용되는 컨벤션은 다음과 같습니다.
 - from : 하나의 매개 변수를 받아서 객체 생성
 - of : 여러 개의 매개 변수를 받아서 객체를 생성
 - getInstance OR instance : 인스턴스를 생성하거나 기존에 생성된 인스턴스를 반환
@@ -87,7 +87,7 @@ public abstract class Ship {
 }
 ```
 
-구현체들이 상속받을 추상 클래스 또는 클래스를 정의합니다.
+구현체들이 상속받을 추상 클래스 또는 인터페이스를 정의합니다.
 
 ```java
 public class CargoShip extends Ship {
