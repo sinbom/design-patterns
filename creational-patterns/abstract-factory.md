@@ -6,7 +6,7 @@
 > 클래스간의 결합도를 느슨하게 가져갈 수 있습니다.
 
 <p align="center">
-    <img src="https://github.com/sinbom/design-patterns/blob/master/resources/abstract-factory.jpg?raw=true"/>
+    <img src="https://github.com/sinbom/design-patterns/blob/master/resources/abstract-factory.png?raw=true"/>
 </p>
 
 ### 구현 방법
