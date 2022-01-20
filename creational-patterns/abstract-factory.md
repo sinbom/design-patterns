@@ -6,7 +6,7 @@
 > 클래스간의 결합도를 느슨하게 가져갈 수 있습니다.
 
 <p align="center">
-    <img src="https://github.com/sinbom/design-patterns/blob/master/resources/abstract-factory.png?raw=true"/>
+    <img src="https://github.com/sinbom/design-patterns/blob/master/resources/abstract-factory.jpg?raw=true"/>
 </p>
 
 ### 구현 방법
@@ -26,8 +26,6 @@ public interface ShipFactory {
 - newInstance OR create : 새로운 인스턴스를 생성
 - get[type] : 다른 타입의 인스턴스를 생성하거나 기존에 생성된 인스턴스를 반환
 - new[type] : 다른 타입의 새로운 인스턴스를 생성
-
-TODO
 
 ```java
 public class WhiteShipFactory implements ShipFactory {
@@ -162,8 +160,6 @@ public interface Wheel {
 
 팩토리 메소드가 생성하는 구현체와 관련된 추상 팩토리가 생성하는 객체들이 상속받을 인터페이스를 정의합니다.
 
-TODO
-
 ```java
 public class WhiteAnchor implements Anchor {
 }
@@ -185,8 +181,6 @@ public class WhiteProWheel implements Wheel {
 ```
 
 추상 팩토리가 생성하는 구현체 클래스를 정의합니다.
-
-TODO 
 
 <p align="center">
     <img src="https://github.com/sinbom/design-patterns/blob/master/resources/abstract-factory-diagram.png?raw=true"/>
@@ -210,8 +204,6 @@ public class WhiteShipFactory implements ShipFactory {
 
 추상 팩토리를 사용하지 않고 팩토리 메소드가 생성하는 구현체를 생성하는 과정에서 구체적인 클래스를 사용하여 관련 객체를 생성하게 되면 
 새로운 구현체와 관련된 객체가 추가될 때마다 소스 코드의 수정이 필요해지고 클래스와의 결합도가 증가합니다.
-
-TODO
 
 ```java
 @ParameterizedTest
