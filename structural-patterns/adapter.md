@@ -5,7 +5,7 @@
 > 구현체에서 실제 사용하는 다른 인터페이스 타입의 객체를 위임하여 사용하는 패턴입니다.
 
 <p align="center">
-    <img src="https://github.com/sinbom/design-patterns/blob/master/resources/adapter.png?raw=true"/>
+    <img src="https://github.com/sinbom/design-patterns/blob/master/resources/adapter.jpg?raw=true"/>
 </p>
 
 ### 구현 방법
