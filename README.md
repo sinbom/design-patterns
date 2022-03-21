@@ -13,7 +13,7 @@
 - ## Structural Patterns(구조 관련 패턴)
 
     - [Adapter(어댑터 패턴)](https://github.com/sinbom/design-patterns/blob/master/structural-patterns/adapter.md)
-    - [Bridge(브릿지 패턴)]()
+    - [Bridge(브릿지 패턴)](https://github.com/sinbom/design-patterns/blob/master/structural-patterns/bridge.md)
     - [Composite(컴포짓 패턴)]()
     - [Decorator(데코레이터 패턴)]()
     - [Facade(퍼사드 패턴)]()
