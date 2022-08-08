@@ -6,7 +6,7 @@
 > 영향을 미치기 때문에 변경 사항에 대응하기 유리합니다.
 
 <p align="center">
-    <img src="https://github.com/sinbom/design-patterns/blob/master/resources/factory-method.jpg?raw=true"/>
+    <img src="https://github.com/sinbom/design-patterns/blob/master/resources/creational/factory-method.jpg?raw=true"/>
 </p>
 
 ### 구현 방법
@@ -111,7 +111,7 @@ public class PassengerShip extends Ship {
 추상 클래스를 상속받는 구현체 클래스를 정의합니다. 
 
 <p align="center">
-    <img src="https://github.com/sinbom/design-patterns/blob/master/resources/factory-method-diagram.png?raw=true"/>
+    <img src="https://github.com/sinbom/design-patterns/blob/master/resources/creational/factory-method-diagram.png?raw=true"/>
 </p>
 
 인터페이스 및 추상 클래스와 구현체들을 정의한 다이어그램은 다음과 같습니다.

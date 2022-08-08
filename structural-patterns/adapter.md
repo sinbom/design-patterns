@@ -5,7 +5,7 @@
 > 구현체에서 실제 사용하는 다른 인터페이스 타입의 객체를 위임하여 사용하는 패턴입니다.
 
 <p align="center">
-    <img src="https://github.com/sinbom/design-patterns/blob/master/resources/adapter.jpg?raw=true"/>
+    <img src="https://github.com/sinbom/design-patterns/blob/master/resources/structural/adapter.jpg?raw=true"/>
 </p>
 
 ### 구현 방법
@@ -111,7 +111,7 @@ public class AccountUserDetailsService implements UserDetailsService {
 객체(Adaptee)를 위임하여 사용합니다.
 
 <p align="center">
-    <img src="https://github.com/sinbom/design-patterns/blob/master/resources/adapter-diagram.png?raw=true"/>
+    <img src="https://github.com/sinbom/design-patterns/blob/master/resources/structural/adapter-diagram.png?raw=true"/>
 </p>
 
 인터페이스와 구현체들을 정의한 다이어그램은 다음과 같습니다.

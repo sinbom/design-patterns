@@ -1,4 +1,4 @@
-package factory_method;
+package creational.factory_method;
 
 import creational.factory_method.*;
 import org.junit.jupiter.api.Test;

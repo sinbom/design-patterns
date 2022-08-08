@@ -1,4 +1,4 @@
-package singleton;
+package creational.singleton;
 
 import creational.singleton.inner.Singleton;
 import org.junit.jupiter.api.Test;

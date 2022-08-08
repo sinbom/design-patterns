@@ -6,7 +6,7 @@
 > 다양한 객체의 생성 방식에 유연하게 대응할 수 있습니다.
 
 <p align="center">
-    <img src="https://github.com/sinbom/design-patterns/blob/master/resources/builder.png?raw=true"/>
+    <img src="https://github.com/sinbom/design-patterns/blob/master/resources/creational/builder.png?raw=true"/>
 </p>
 
 ### 구현 방법
@@ -159,7 +159,7 @@ public class TourDirector {
 통해 객체를 생성하도록합니다.
 
 <p align="center">
-    <img src="https://github.com/sinbom/design-patterns/blob/master/resources/builder-diagram.png?raw=true"/>
+    <img src="https://github.com/sinbom/design-patterns/blob/master/resources/creational/builder-diagram.png?raw=true"/>
 </p>
 
 인터페이스와 구현체들을 정의한 다이어그램은 다음과 같습니다.

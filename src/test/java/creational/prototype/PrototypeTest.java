@@ -1,4 +1,4 @@
-package prototype;
+package creational.prototype;
 
 import creational.prototype.GithubIssue;
 import creational.prototype.GithubRepository;

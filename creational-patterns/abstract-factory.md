@@ -6,7 +6,7 @@
 > 클래스간의 결합도를 느슨하게 가져갈 수 있습니다.
 
 <p align="center">
-    <img src="https://github.com/sinbom/design-patterns/blob/master/resources/abstract-factory.jpg?raw=true"/>
+    <img src="https://github.com/sinbom/design-patterns/blob/master/resources/creational/abstract-factory.jpg?raw=true"/>
 </p>
 
 ### 구현 방법
@@ -183,7 +183,7 @@ public class WhiteProWheel implements Wheel {
 추상 팩토리가 생성하는 구현체 클래스를 정의합니다.
 
 <p align="center">
-    <img src="https://github.com/sinbom/design-patterns/blob/master/resources/abstract-factory-diagram.png?raw=true"/>
+    <img src="https://github.com/sinbom/design-patterns/blob/master/resources/creational/abstract-factory-diagram.png?raw=true"/>
 </p>
 
 인터페이스 및 추상 클래스와 구현체들을 정의한 다이어그램은 다음과 같습니다.

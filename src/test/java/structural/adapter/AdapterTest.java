@@ -1,4 +1,4 @@
-package adapter;
+package structural.adapter;
 
 import org.junit.jupiter.api.Test;
 import structural.adapter.*;

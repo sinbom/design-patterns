@@ -1,4 +1,4 @@
-package bridge;
+package structural.bridge;
 
 import org.junit.jupiter.api.Test;
 import structural.bridge.*;

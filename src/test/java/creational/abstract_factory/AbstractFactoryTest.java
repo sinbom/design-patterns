@@ -1,4 +1,4 @@
-package abstract_factory;
+package creational.abstract_factory;
 
 import creational.abstract_factory.*;
 import creational.factory_method.ShipFactory;

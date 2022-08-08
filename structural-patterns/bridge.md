@@ -5,7 +5,7 @@
 > 즉 기능과 구현에 대해서 별도의 클래스로 분리하여 구현하는 패턴입니다.
 
 <p align="center">
-    <img src="https://github.com/sinbom/design-patterns/blob/master/resources/bridge.jpg?raw=true"/>
+    <img src="https://github.com/sinbom/design-patterns/blob/master/resources/structural/bridge.jpg?raw=true"/>
 </p>
 
 ### 구현 방법
@@ -125,7 +125,7 @@ public class PoolParty implements Skin{
 구현 계층 인터페이스의 구현체(Concrete Implementation)를 정의합니다.
 
 <p align="center">
-    <img src="https://github.com/sinbom/design-patterns/blob/master/resources/bridge-diagram.png?raw=true"/>
+    <img src="https://github.com/sinbom/design-patterns/blob/master/resources/structural/bridge-diagram.png?raw=true"/>
 </p>
 
 인터페이스와 구현체들을 정의한 다이어그램은 다음과 같습니다.

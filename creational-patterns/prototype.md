@@ -6,7 +6,7 @@
 > 객체의 복잡한 생성 과정을 캡슐화하여 감추고 추상화된 리턴 타입을 사용할 수 있습니다.
 
 <p align="center">
-    <img src="https://github.com/sinbom/design-patterns/blob/master/resources/prototype.png?raw=true"/>
+    <img src="https://github.com/sinbom/design-patterns/blob/master/resources/creational/prototype.png?raw=true"/>
 </p>
 
 ### 구현 방법

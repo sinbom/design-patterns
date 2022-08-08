@@ -4,7 +4,7 @@
 > 애플리케이션에서 여러 개의 인스턴스를 생성할 필요가 없는 경우 1개의 인스턴스만을 생성하도록 설계하고 생성한 객체를 재사용합니다.
 
 <p align="center">
-    <img src="https://github.com/sinbom/design-patterns/blob/master/resources/singleton.jpg?raw=true"/>
+    <img src="https://github.com/sinbom/design-patterns/blob/master/resources/creational/singleton.jpg?raw=true"/>
 </p>
 
 ### 구현 방법
@@ -106,7 +106,7 @@ public class Singleton {
 thread-safe를 보장할 수 있으며 JDK 1.5 이상을 사용하는 경우에만 이 방법을 사용할 수 있습니다.
 
 <p align="center">
-    <img src="https://github.com/sinbom/design-patterns/blob/master/resources/multi-thread-cpu.png?raw=true"/>
+    <img src="https://github.com/sinbom/design-patterns/blob/master/resources/creational/multi-thread-cpu.png?raw=true"/>
 </p>
 
 애플리케이션이 두 개 이상의 CPU를 가진 컴퓨팅 환경에서 실행되고 있다면 멀티 쓰레드 환경에서 접근하는 
