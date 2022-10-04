@@ -17,7 +17,7 @@
     - [Composite(컴포짓 패턴)](https://github.com/sinbom/design-patterns/blob/master/structural-patterns/composite.md)
     - [Decorator(데코레이터 패턴)](https://github.com/sinbom/design-patterns/blob/master/structural-patterns/decorator.md)
     - [Facade(퍼사드 패턴)](https://github.com/sinbom/design-patterns/blob/master/structural-patterns/facade.md)
-    - [Flyweight(플라이웨이트 패턴)]()
+    - [Flyweight(플라이웨이트 패턴)](https://github.com/sinbom/design-patterns/blob/master/structural-patterns/flyweight.md)
     - [Proxy(프록시 패턴)]()
 
   <br>
